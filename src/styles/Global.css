@@ -1,0 +1,208 @@
+ul li a {
+  color: blue;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.QA {
+  font-size: 2em;
+  margin: 15px 0;
+}
+
+.QA-items {
+  display: block;
+  margin-left: 23em;
+}
+
+.QA-link {
+  color: black;
+  font-size: 1.5em;
+}
+
+.balance, .income-outcome, .transaction-history {
+  margin: 20px 0;
+}
+
+.income {
+  color: green;
+}
+
+.expense {
+  color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.history-block {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-block h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.history-block ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history-block ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.history-block ul li:last-child {
+  border-bottom: none;
+}
+
+.history-block .income {
+  color: green;
+}
+
+.history-block .expense {
+  color: red;
+}
+
+.expense-tracker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.currency-switch {
+  display: flex;
+  align-items: center;
+}
+
+.currency-switch select {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.income-outcome {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.income, .outcome {
+  width: 48%;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+.expense-tracker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.currency-switch {
+  display: flex;
+  align-items: center;
+}
+
+.currency-switch select {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.income-outcome {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.income, .outcome {
+  width: 48%;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.transaction-history {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.transaction-history h3 {
+  text-align: center;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-name {
+  font-weight: bold;
+}
+
+.transaction-amount {
+  color: #333;
+  font-size: 1.1em;
+}
+
