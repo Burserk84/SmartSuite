@@ -43,7 +43,7 @@ const TransactionForm = () => {
           onChange={(e) => setAmount(e.target.value)}
         />
       </div>
-      <button type="submit">Add Transaction</button>
+      <button type="submit" style={{backgroundColor: "rgb(121, 190, 188)", color: "black"}}>Add Transaction</button>
     </form>
   );
 };

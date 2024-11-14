@@ -23,6 +23,48 @@ ul li {
   font-size: 1.5em;
 }
 
+/*////////////////////////////////
+    start of count down style
+////////////////////////////////*/
+
+.countdown-container{
+  height: fit-content;
+	background: rgb(141 136 213);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin: 1rem auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button.btn.btn-primary {
+  width: 100%;
+}
+
+.countdown-container h3{
+  position: relative;
+  max-height: fit-content;
+  min-width: 33rem;
+  width: 100%;
+  background: rgb(124, 119, 185);
+  padding: 1rem;
+}
+/*///////////////////////////
+    start of expense style
+///////////////////////////*/
+
+.expense-container{
+  height: fit-content;
+	background: rgb(136 213 210);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin: 1rem auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
 .balance, .income-outcome, .transaction-history {
   margin: 20px 0;
   font-size: 1.3em;
@@ -124,10 +166,15 @@ button:hover {
   border: 1px solid #ccc;
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0;
+.expense-container h1 {
+  position: relative;
+  max-height: fit-content;
+  min-width: 33rem;
+  width: 100%;
+  background: rgb(121, 190, 188);
+  padding: 1rem;
 }
+
 
 .income-outcome {
   display: flex;
@@ -162,11 +209,6 @@ h1 {
   font-size: 1em;
   border-radius: 4px;
   border: 1px solid #ccc;
-}
-
-h1 {
-  font-size: 2em;
-  margin: 0;
 }
 
 .income-outcome {
@@ -218,16 +260,15 @@ h1 {
     Start of note app style
 //////////////////////////////////*/
 
-/* Styling card container */
 .card {
-	/* min-height: 50vh; */
 	height: fit-content;
-	min-width: 33rem;
-	max-width: 40rem;
 	background: rgba(147, 208, 119, 1);
-	margin: 0 1rem;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-	width: 100%;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
 .head {
@@ -241,22 +282,20 @@ h1 {
 }
 
 
-/* Input box and button */
 .add {
 	padding: 5%;
 	text-align: left;
 	padding-left: 6%;
-	/* margin: 10%; */
 }
 
 #title {
-	width: 20%;
+	width: 30%;
 	font-size: larger;
 }
 
 #description {
 	font-size: large;
-	width: 60%;
+	width: 70%;
 }
 
 button {
@@ -265,27 +304,91 @@ button {
 	font-size: large;
 	color: #dbeefa;
 	background-color: rgb(109, 157, 87);
+  display: block;
+  width: 100%;
 }
 
-/* style accordion */
 .notes {
 	margin: 5%;
 	text-align: left;
 }
 
-/* style for accordion items */
 .notes-item {
 	display: flex;
 	z-index: 100;
 	padding: 2%;
-	/* border-bottom: 1px solid #4e7b48; */
 	font-size: larger;
 	margin: 2%;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* style for accordion items */
 .accordion-item {
 	border-bottom: 1px solid #ddd;
 	font-size: larger;
+}
+
+/*////////////////////////
+    start of todolist
+////////////////////////*/
+
+.todo-container {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex-grow: 1;
+  padding: 8px;
+}
+
+.input-section button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.clear-btn {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.high-priority {
+  background-color: #fff3cd;
+}
+
+.todo-item button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.todo-item button:hover {
+  background-color: #0056b3;
 }

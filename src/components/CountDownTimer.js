@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { convertToSeconds, formatTime } from "../utils/countdownFuture";
+import "../styles/Global.css"
 
 export const CountDownTimer = () => {
   const [inputHours, setInputHours] = useState(0);
@@ -60,7 +61,7 @@ export const CountDownTimer = () => {
   };
 
   return (
-    <div className="p-3" style={{ textAlign: "center" }}>
+    <div className="p-3 countdown-container" style={{ textAlign: "center" }}>
       <h3>Countdown Timer</h3>
       {!isRunning && !isPaused && (
         <div>

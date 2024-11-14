@@ -9,13 +9,15 @@ import '../styles/Global.css';
 export const ExpenseTracker = () => {
   return (
     <React.Fragment>
-      <ExpenseProvider>
-        <h1>Expense Tracker</h1>
-        <Balance />
-        <IncomeOutcome />
-        <TransactionForm />
-        <TransactionHistory />  {/* Add the transaction history here */}
-      </ExpenseProvider>
+      <div className='expense-container'>
+        <ExpenseProvider>
+          <h1 style={{textAlign:"center"}}>Expense Tracker</h1>
+          <Balance />
+          <IncomeOutcome />
+          <TransactionForm />
+          <TransactionHistory />  {/* Add the transaction history here */}
+        </ExpenseProvider>
+      </div>
     </React.Fragment>
   );
 };

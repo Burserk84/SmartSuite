@@ -27,7 +27,7 @@ export function NoteApp() {
         <div className="App">
             <div className="card">
                 <div className="head">
-                    <h1>React notes</h1>
+                    <h1>notes</h1>
                 </div>
                 <div className="notes">
                     {notes.map((e) => (
