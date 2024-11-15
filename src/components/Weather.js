@@ -45,7 +45,7 @@ export const Weather = () => {
   console.log(weather);
 
   return (
-    <div className="p-1 bg-light rounded" style={{ maxWidth: "35rem" }}>
+    <div className="p-1 rounded" style={{ maxWidth: "35rem",backgroundColor: "rgb(193 193 193)" }}>
       <div
         className="m-3"
         style={{ maxWidth: "18rem", display: "inline-block" }}

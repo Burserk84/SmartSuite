@@ -97,7 +97,7 @@ export const CountDownTimer = () => {
       )}
       {(isRunning || isPaused) && (
         <div>
-          <h2>{formatTime(timeLeft)}</h2>
+          <h2 style={{margin: "1.1em 0 1.1em 0"}}>{formatTime(timeLeft)}</h2>
           {isRunning ? (
             <button className="btn btn-warning" onClick={pauseCountdown}>
               Pause

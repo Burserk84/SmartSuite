@@ -11,15 +11,13 @@ export const Header = () => {
   return (
     <React.Fragment>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        {" "}
-        {/* start of navbar */}
-        <div className="container-fluid">
-          {" "}
-          {/* name of project that lead to home */}
+        <div className="container-fluid d-flex justify-content-between align-items-center">
+          {/* Project name leading to home */}
           <Link className="navbar-brand" to="/">
             SmartSuite
           </Link>
-          {/* start of toggle button */}{" "}
+
+          {/* Align toggle button to the right */}
           <button
             className="navbar-toggler"
             type="button"
@@ -31,28 +29,25 @@ export const Header = () => {
             onClick={toggleExpand}
           >
             <span className="navbar-toggler-icon"></span>
-          </button>{" "}
-          {/* End of toggle button */}
+          </button>
+
+          {/* Navigation links */}
           <div
             className={`collapse navbar-collapse ${expand === 1 ? "show" : ""}`}
             id="navbarNav"
           >
-            <ul className="navbar-nav">
-              {" "}
-              {/* start of ul li */}
-              {expand === 1 &&
-                navData.map((item) => (
-                  <li className="nav-item" key={item.id}>
-                    <Link className="nav-link" to={item.src}>
-                      | {item.name}
-                    </Link>
-                  </li>
-                ))}
+            <ul className="navbar-nav ms-auto align-items-center">
+              {navData.map((item) => (
+                <li className="nav-item" key={item.id}>
+                  <Link className="nav-link" to={item.src}>
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
       </nav>
-      {/* end of navbar */}
     </React.Fragment>
   );
 };

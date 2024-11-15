@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 export const Home = () => {
   return (
     <div>
-      <Weather />
       <TypingEffect />
+      <Weather />
       <div className="p-3">
         <p className="QA">What is SmartSuite used for?</p>
         <ul>

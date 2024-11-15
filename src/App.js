@@ -12,15 +12,15 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function App() {
   return (
-    <Container>
-      <Router>
+    <Router>
+      <Container className="d-flex flex-column min-vh-100">
         <Row>
           <Col style={{marginTop: "15px"}}>
             <Header />
           </Col>
         </Row>
-        <Row className="justify-content-center">
-          <Col md={8}>
+        <Row className="flex-grow-1 justify-content-center">
+          <Col md={8} className="p-4">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/timer" element={<CountDownTimer />} />
@@ -35,8 +35,8 @@ function App() {
             <Footer />
           </Col>
         </Row>
-      </Router>
-    </Container>
+      </Container>
+    </Router>
   );
 }
 
