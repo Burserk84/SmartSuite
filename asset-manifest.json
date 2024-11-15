@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SmartSuite/static/css/main.8507c61b.css",
+    "main.js": "/SmartSuite/static/js/main.03d8dc0e.js",
+    "static/js/453.af1f5e44.chunk.js": "/SmartSuite/static/js/453.af1f5e44.chunk.js",
+    "index.html": "/SmartSuite/index.html",
+    "main.8507c61b.css.map": "/SmartSuite/static/css/main.8507c61b.css.map",
+    "main.03d8dc0e.js.map": "/SmartSuite/static/js/main.03d8dc0e.js.map",
+    "453.af1f5e44.chunk.js.map": "/SmartSuite/static/js/453.af1f5e44.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8507c61b.css",
+    "static/js/main.03d8dc0e.js"
+  ]
+}
